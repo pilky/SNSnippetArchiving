@@ -1,0 +1,5 @@
+/**
+ @category CLASS_HERE(CATEGORY_HERE)
+ DISCUSSION_HERE
+ @since Available in FRAMEWORK_HERE VERSION_HERE and later
+*/

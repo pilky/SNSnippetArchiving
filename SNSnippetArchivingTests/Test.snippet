@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<snippets>
+	<snippet>
+		<name><![CDATA[Frame initialisers]]></name>
+		<highlight key="objc"><![CDATA[Objective-C]]></highlight>
+		<author>
+			<name><![CDATA[Xcode]]></name>
+		</author>
+		<license>Other</license>
+		<code><![CDATA[- (id)initWithFrame:(CGRect)frame {
+	if (self = [super initWithFrame:frame]) {
+		[self setup];
+	}
+	return self;
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+	if (self = [super initWithCoder:aDecoder]) {
+		[self setup];
+	}
+	return self;
+}
+
+- (void)setup {
+
+}]]></code>
+	</snippet>
+	
+	
+	<snippet>
+		<name><![CDATA[Centre Align Image]]></name>
+		<highlight key="html"><![CDATA[HTML]]></highlight>
+		<author>
+			<name><![CDATA[John Doe]]></name>
+			<email>john@johndoe.com</email>
+			<link>http://www.johndoe.com/</link>
+		</author>
+		<license link="http://www.opensource.org/licenses/mit-license.php">MIT</license>
+		<code><![CDATA[<p class="centerimg"><img src="" alt=""/></p>]]></code>
+	</snippet>
+	
+	
+	<snippet>
+		<name><![CDATA[Category Doxygen Comment]]></name>
+		<highlight key="c"><![CDATA[C]]></highlight>
+		<author>
+			<name><![CDATA[Xcode]]></name>
+		</author>
+		<license>Other</license>
+		<tags>
+			<tag><![CDATA[Doxygen]]></tag>
+			<tag><![CDATA[Comment]]></tag>
+		</tags>
+		<code><![CDATA[/**
+ @category CLASS_HERE(CATEGORY_HERE)
+ DISCUSSION_HERE
+ @since Available in FRAMEWORK_HERE VERSION_HERE and later
+*/]]></code>
+	</snippet>
+	
+	
+	<snippet>
+		<name><![CDATA[Test Snippet]]></name>
+		<description><![CDATA[Hey, this is cool snippet.]]></description>
+		<highlight key="unknown"><![CDATA[Obj-PHP]]></highlight>
+		<links>
+			<link>
+				<name><![CDATA[source]]></name>
+				<url>http://someblog.com/cool-code.html</url>
+			</link>
+			<link>
+				<name><![CDATA[example]]></name>
+				<url>http://someblog.com/cool-example.html</url>
+			</link>
+		</links>
+		<author>
+			<name><![CDATA[John Doe]]></name>
+			<email>john@johndoe.com</email>
+			<link>http://www.johndoe.com/</link>
+		</author>
+		<license link="http://www.opensource.org/licenses/mit-license.php">MIT</license>
+		<tags>
+			<tag><![CDATA[Tag #1]]></tag>
+		</tags>
+		<code><![CDATA[print “hello world”;]]></code>
+	</snippet>
+</snippets>

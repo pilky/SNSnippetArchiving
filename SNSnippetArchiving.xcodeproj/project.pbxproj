@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		99825FE312F9969D003C36AE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99825FE212F9969D003C36AE /* Cocoa.framework */; };
+		99825FED12F9969D003C36AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99825FEB12F9969D003C36AE /* InfoPlist.strings */; };
+		99825FF512F9969D003C36AE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99825FE212F9969D003C36AE /* Cocoa.framework */; };
+		99825FF812F9969D003C36AE /* SNSnippetArchiving.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99825FDF12F9969D003C36AE /* SNSnippetArchiving.framework */; };
+		99825FFE12F9969D003C36AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99825FFC12F9969D003C36AE /* InfoPlist.strings */; };
+		9982600112F9969D003C36AE /* SNSnippetArchivingTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 9982600012F9969D003C36AE /* SNSnippetArchivingTests.h */; };
+		9982600312F9969D003C36AE /* SNSnippetArchivingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9982600212F9969D003C36AE /* SNSnippetArchivingTests.m */; };
+		9982601512F996D1003C36AE /* SNSnippet.h in Headers */ = {isa = PBXBuildFile; fileRef = 9982601112F996D1003C36AE /* SNSnippet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9982601612F996D1003C36AE /* SNSnippet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9982601212F996D1003C36AE /* SNSnippet.m */; };
+		9982601912F996E7003C36AE /* Test.snippet in Resources */ = {isa = PBXBuildFile; fileRef = 9982601812F996E7003C36AE /* Test.snippet */; };
+		9982601D12F99757003C36AE /* SNSnippetWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9982601B12F99757003C36AE /* SNSnippetWriter.m */; };
+		9982601F12F997CE003C36AE /* SNSnippetWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9982601E12F997CE003C36AE /* SNSnippetWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9982602612F99896003C36AE /* SNSnippetReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 9982602412F99896003C36AE /* SNSnippetReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9982602712F99896003C36AE /* SNSnippetReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9982602512F99896003C36AE /* SNSnippetReader.m */; };
+		9982602912F998D1003C36AE /* SNSnippetArchiving.h in Headers */ = {isa = PBXBuildFile; fileRef = 9982602812F998D1003C36AE /* SNSnippetArchiving.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9982602C12F99A98003C36AE /* NSXMLElement+SNExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9982602A12F99A97003C36AE /* NSXMLElement+SNExtensions.h */; };
+		9982602D12F99A98003C36AE /* NSXMLElement+SNExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9982602B12F99A97003C36AE /* NSXMLElement+SNExtensions.m */; };
+		9982603212F9A570003C36AE /* frameinitialisers_code.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9982602E12F9A540003C36AE /* frameinitialisers_code.txt */; };
+		9982603312F9A570003C36AE /* centrealignimage_code.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9982603012F9A56A003C36AE /* centrealignimage_code.txt */; };
+		9982603812F9A605003C36AE /* categorydoxygencomment_code.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9982603412F9A591003C36AE /* categorydoxygencomment_code.txt */; };
+		9982603912F9A605003C36AE /* testsnippet_code.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9982603612F9A5D4003C36AE /* testsnippet_code.txt */; };
+		9982603B12F9A97C003C36AE /* LICENCE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9982603A12F9A97C003C36AE /* LICENCE.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99825FF612F9969D003C36AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99825FD512F9969D003C36AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99825FDE12F9969D003C36AE;
+			remoteInfo = SNSnippetArchiving;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		99825FDF12F9969D003C36AE /* SNSnippetArchiving.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SNSnippetArchiving.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99825FE212F9969D003C36AE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		99825FE512F9969D003C36AE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		99825FE612F9969D003C36AE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		99825FE712F9969D003C36AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		99825FEA12F9969D003C36AE /* SNSnippetArchiving-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SNSnippetArchiving-Info.plist"; sourceTree = "<group>"; };
+		99825FEC12F9969D003C36AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		99825FEE12F9969D003C36AE /* SNSnippetArchiving-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SNSnippetArchiving-Prefix.pch"; sourceTree = "<group>"; };
+		99825FF412F9969D003C36AE /* SNSnippetArchivingTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SNSnippetArchivingTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99825FFB12F9969D003C36AE /* SNSnippetArchivingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SNSnippetArchivingTests-Info.plist"; sourceTree = "<group>"; };
+		99825FFD12F9969D003C36AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		99825FFF12F9969D003C36AE /* SNSnippetArchivingTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SNSnippetArchivingTests-Prefix.pch"; sourceTree = "<group>"; };
+		9982600012F9969D003C36AE /* SNSnippetArchivingTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNSnippetArchivingTests.h; sourceTree = "<group>"; };
+		9982600212F9969D003C36AE /* SNSnippetArchivingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNSnippetArchivingTests.m; sourceTree = "<group>"; };
+		9982601112F996D1003C36AE /* SNSnippet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNSnippet.h; sourceTree = "<group>"; };
+		9982601212F996D1003C36AE /* SNSnippet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSnippet.m; sourceTree = "<group>"; };
+		9982601812F996E7003C36AE /* Test.snippet */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Test.snippet; sourceTree = "<group>"; };
+		9982601B12F99757003C36AE /* SNSnippetWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSnippetWriter.m; sourceTree = "<group>"; };
+		9982601E12F997CE003C36AE /* SNSnippetWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNSnippetWriter.h; sourceTree = "<group>"; };
+		9982602412F99896003C36AE /* SNSnippetReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNSnippetReader.h; sourceTree = "<group>"; };
+		9982602512F99896003C36AE /* SNSnippetReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSnippetReader.m; sourceTree = "<group>"; };
+		9982602812F998D1003C36AE /* SNSnippetArchiving.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNSnippetArchiving.h; sourceTree = "<group>"; };
+		9982602A12F99A97003C36AE /* NSXMLElement+SNExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSXMLElement+SNExtensions.h"; sourceTree = "<group>"; };
+		9982602B12F99A97003C36AE /* NSXMLElement+SNExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSXMLElement+SNExtensions.m"; sourceTree = "<group>"; };
+		9982602E12F9A540003C36AE /* frameinitialisers_code.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frameinitialisers_code.txt; sourceTree = "<group>"; };
+		9982603012F9A56A003C36AE /* centrealignimage_code.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = centrealignimage_code.txt; sourceTree = "<group>"; };
+		9982603412F9A591003C36AE /* categorydoxygencomment_code.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = categorydoxygencomment_code.txt; sourceTree = "<group>"; };
+		9982603612F9A5D4003C36AE /* testsnippet_code.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testsnippet_code.txt; sourceTree = "<group>"; };
+		9982603A12F9A97C003C36AE /* LICENCE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99825FDB12F9969D003C36AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99825FE312F9969D003C36AE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99825FF012F9969D003C36AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99825FF512F9969D003C36AE /* Cocoa.framework in Frameworks */,
+				99825FF812F9969D003C36AE /* SNSnippetArchiving.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		99825FD312F9969D003C36AE = {
+			isa = PBXGroup;
+			children = (
+				99825FE812F9969D003C36AE /* SNSnippetArchiving */,
+				99825FF912F9969D003C36AE /* SNSnippetArchivingTests */,
+				99825FE112F9969D003C36AE /* Frameworks */,
+				99825FE012F9969D003C36AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		99825FE012F9969D003C36AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99825FDF12F9969D003C36AE /* SNSnippetArchiving.framework */,
+				99825FF412F9969D003C36AE /* SNSnippetArchivingTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99825FE112F9969D003C36AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99825FE212F9969D003C36AE /* Cocoa.framework */,
+				99825FE412F9969D003C36AE /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99825FE412F9969D003C36AE /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99825FE512F9969D003C36AE /* AppKit.framework */,
+				99825FE612F9969D003C36AE /* CoreData.framework */,
+				99825FE712F9969D003C36AE /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		99825FE812F9969D003C36AE /* SNSnippetArchiving */ = {
+			isa = PBXGroup;
+			children = (
+				9982602812F998D1003C36AE /* SNSnippetArchiving.h */,
+				9982601E12F997CE003C36AE /* SNSnippetWriter.h */,
+				9982601B12F99757003C36AE /* SNSnippetWriter.m */,
+				9982602412F99896003C36AE /* SNSnippetReader.h */,
+				9982602512F99896003C36AE /* SNSnippetReader.m */,
+				9982601112F996D1003C36AE /* SNSnippet.h */,
+				9982601212F996D1003C36AE /* SNSnippet.m */,
+				9982602A12F99A97003C36AE /* NSXMLElement+SNExtensions.h */,
+				9982602B12F99A97003C36AE /* NSXMLElement+SNExtensions.m */,
+				99825FE912F9969D003C36AE /* Supporting Files */,
+			);
+			path = SNSnippetArchiving;
+			sourceTree = "<group>";
+		};
+		99825FE912F9969D003C36AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				99825FEA12F9969D003C36AE /* SNSnippetArchiving-Info.plist */,
+				9982603A12F9A97C003C36AE /* LICENCE.txt */,
+				99825FEB12F9969D003C36AE /* InfoPlist.strings */,
+				99825FEE12F9969D003C36AE /* SNSnippetArchiving-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		99825FF912F9969D003C36AE /* SNSnippetArchivingTests */ = {
+			isa = PBXGroup;
+			children = (
+				9982600012F9969D003C36AE /* SNSnippetArchivingTests.h */,
+				9982600212F9969D003C36AE /* SNSnippetArchivingTests.m */,
+				99825FFA12F9969D003C36AE /* Supporting Files */,
+			);
+			path = SNSnippetArchivingTests;
+			sourceTree = "<group>";
+		};
+		99825FFA12F9969D003C36AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9982601812F996E7003C36AE /* Test.snippet */,
+				9982602E12F9A540003C36AE /* frameinitialisers_code.txt */,
+				9982603012F9A56A003C36AE /* centrealignimage_code.txt */,
+				9982603412F9A591003C36AE /* categorydoxygencomment_code.txt */,
+				9982603612F9A5D4003C36AE /* testsnippet_code.txt */,
+				99825FFB12F9969D003C36AE /* SNSnippetArchivingTests-Info.plist */,
+				99825FFC12F9969D003C36AE /* InfoPlist.strings */,
+				99825FFF12F9969D003C36AE /* SNSnippetArchivingTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		99825FDC12F9969D003C36AE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9982601512F996D1003C36AE /* SNSnippet.h in Headers */,
+				9982601F12F997CE003C36AE /* SNSnippetWriter.h in Headers */,
+				9982602612F99896003C36AE /* SNSnippetReader.h in Headers */,
+				9982602912F998D1003C36AE /* SNSnippetArchiving.h in Headers */,
+				9982602C12F99A98003C36AE /* NSXMLElement+SNExtensions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		99825FDE12F9969D003C36AE /* SNSnippetArchiving */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9982600612F9969D003C36AE /* Build configuration list for PBXNativeTarget "SNSnippetArchiving" */;
+			buildPhases = (
+				99825FDA12F9969D003C36AE /* Sources */,
+				99825FDB12F9969D003C36AE /* Frameworks */,
+				99825FDC12F9969D003C36AE /* Headers */,
+				99825FDD12F9969D003C36AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SNSnippetArchiving;
+			productName = SNSnippetArchiving;
+			productReference = 99825FDF12F9969D003C36AE /* SNSnippetArchiving.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		99825FF312F9969D003C36AE /* SNSnippetArchivingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9982600912F9969D003C36AE /* Build configuration list for PBXNativeTarget "SNSnippetArchivingTests" */;
+			buildPhases = (
+				99825FEF12F9969D003C36AE /* Sources */,
+				99825FF012F9969D003C36AE /* Frameworks */,
+				99825FF112F9969D003C36AE /* Resources */,
+				99825FF212F9969D003C36AE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99825FF712F9969D003C36AE /* PBXTargetDependency */,
+			);
+			name = SNSnippetArchivingTests;
+			productName = SNSnippetArchivingTests;
+			productReference = 99825FF412F9969D003C36AE /* SNSnippetArchivingTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99825FD512F9969D003C36AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "M Cubed Software";
+			};
+			buildConfigurationList = 99825FD812F9969D003C36AE /* Build configuration list for PBXProject "SNSnippetArchiving" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 99825FD312F9969D003C36AE;
+			productRefGroup = 99825FE012F9969D003C36AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99825FDE12F9969D003C36AE /* SNSnippetArchiving */,
+				99825FF312F9969D003C36AE /* SNSnippetArchivingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99825FDD12F9969D003C36AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99825FED12F9969D003C36AE /* InfoPlist.strings in Resources */,
+				9982603B12F9A97C003C36AE /* LICENCE.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99825FF112F9969D003C36AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99825FFE12F9969D003C36AE /* InfoPlist.strings in Resources */,
+				9982600112F9969D003C36AE /* SNSnippetArchivingTests.h in Resources */,
+				9982601912F996E7003C36AE /* Test.snippet in Resources */,
+				9982603212F9A570003C36AE /* frameinitialisers_code.txt in Resources */,
+				9982603312F9A570003C36AE /* centrealignimage_code.txt in Resources */,
+				9982603812F9A605003C36AE /* categorydoxygencomment_code.txt in Resources */,
+				9982603912F9A605003C36AE /* testsnippet_code.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		99825FF212F9969D003C36AE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99825FDA12F9969D003C36AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9982601612F996D1003C36AE /* SNSnippet.m in Sources */,
+				9982601D12F99757003C36AE /* SNSnippetWriter.m in Sources */,
+				9982602712F99896003C36AE /* SNSnippetReader.m in Sources */,
+				9982602D12F99A98003C36AE /* NSXMLElement+SNExtensions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99825FEF12F9969D003C36AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9982600312F9969D003C36AE /* SNSnippetArchivingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99825FF712F9969D003C36AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99825FDE12F9969D003C36AE /* SNSnippetArchiving */;
+			targetProxy = 99825FF612F9969D003C36AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		99825FEB12F9969D003C36AE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99825FEC12F9969D003C36AE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		99825FFC12F9969D003C36AE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99825FFD12F9969D003C36AE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9982600412F9969D003C36AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9982600512F9969D003C36AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9982600712F9969D003C36AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SNSnippetArchiving/SNSnippetArchiving-Prefix.pch";
+				INFOPLIST_FILE = "SNSnippetArchiving/SNSnippetArchiving-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		9982600812F9969D003C36AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SNSnippetArchiving/SNSnippetArchiving-Prefix.pch";
+				INFOPLIST_FILE = "SNSnippetArchiving/SNSnippetArchiving-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		9982600A12F9969D003C36AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SNSnippetArchivingTests/SNSnippetArchivingTests-Prefix.pch";
+				INFOPLIST_FILE = "SNSnippetArchivingTests/SNSnippetArchivingTests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		9982600B12F9969D003C36AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SNSnippetArchivingTests/SNSnippetArchivingTests-Prefix.pch";
+				INFOPLIST_FILE = "SNSnippetArchivingTests/SNSnippetArchivingTests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99825FD812F9969D003C36AE /* Build configuration list for PBXProject "SNSnippetArchiving" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9982600412F9969D003C36AE /* Debug */,
+				9982600512F9969D003C36AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9982600612F9969D003C36AE /* Build configuration list for PBXNativeTarget "SNSnippetArchiving" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9982600712F9969D003C36AE /* Debug */,
+				9982600812F9969D003C36AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9982600912F9969D003C36AE /* Build configuration list for PBXNativeTarget "SNSnippetArchivingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9982600A12F9969D003C36AE /* Debug */,
+				9982600B12F9969D003C36AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 99825FD512F9969D003C36AE /* Project object */;
+}

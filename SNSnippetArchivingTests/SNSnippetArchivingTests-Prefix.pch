@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'SNSnippetArchivingTests' target in the 'SNSnippetArchivingTests' project
+//
+
+#ifdef __OBJC__
+	#import <Cocoa/Cocoa.h>
+#endif
