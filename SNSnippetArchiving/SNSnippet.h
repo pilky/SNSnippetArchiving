@@ -8,10 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
-
+@class SNNamedLink;
 @interface SNSnippet : NSObject {
 @private
-    
+    NSString *name;
+	NSString *snippetDescription;
+	NSDictionary *links;
+	NSString *authorName;
+	NSString *authorEmail;
+	NSURL *authorURL;
+	SNNamedLink *licence;
+	NSArray *tags;
+	NSString *code;
 }
 
 @property (copy) NSString *name;
@@ -20,8 +28,7 @@
 @property (copy) NSString *authorName;
 @property (copy) NSString *authorEmail;
 @property (retain) NSURL *authorURL;
-@property (copy) NSString *licence;
-@property (retain) NSURL *licenceURL;
+@property (copy) SNNamedLink *licence;
 @property (copy) NSArray *tags;
 @property (copy) NSString *code;
 

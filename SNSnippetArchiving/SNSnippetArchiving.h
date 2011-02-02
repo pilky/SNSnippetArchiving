@@ -9,3 +9,4 @@
 #import "SNSnippetWriter.h"
 #import	"SNSnippetReader.h"
 #import "SNSnippet.h"
+#import "SNNamedLink.h"

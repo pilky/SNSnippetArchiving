@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		994E4D7212F9BE9A006F6A05 /* SNNamedLink.h in Headers */ = {isa = PBXBuildFile; fileRef = 994E4D7012F9BE9A006F6A05 /* SNNamedLink.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		994E4D7312F9BE9A006F6A05 /* SNNamedLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 994E4D7112F9BE9A006F6A05 /* SNNamedLink.m */; };
 		99825FE312F9969D003C36AE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99825FE212F9969D003C36AE /* Cocoa.framework */; };
 		99825FED12F9969D003C36AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99825FEB12F9969D003C36AE /* InfoPlist.strings */; };
 		99825FF512F9969D003C36AE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99825FE212F9969D003C36AE /* Cocoa.framework */; };
@@ -22,7 +24,7 @@
 		9982602612F99896003C36AE /* SNSnippetReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 9982602412F99896003C36AE /* SNSnippetReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9982602712F99896003C36AE /* SNSnippetReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9982602512F99896003C36AE /* SNSnippetReader.m */; };
 		9982602912F998D1003C36AE /* SNSnippetArchiving.h in Headers */ = {isa = PBXBuildFile; fileRef = 9982602812F998D1003C36AE /* SNSnippetArchiving.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9982602C12F99A98003C36AE /* NSXMLElement+SNExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9982602A12F99A97003C36AE /* NSXMLElement+SNExtensions.h */; };
+		9982602C12F99A98003C36AE /* NSXMLElement+SNExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9982602A12F99A97003C36AE /* NSXMLElement+SNExtensions.h */; settings = {ATTRIBUTES = (); }; };
 		9982602D12F99A98003C36AE /* NSXMLElement+SNExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9982602B12F99A97003C36AE /* NSXMLElement+SNExtensions.m */; };
 		9982603212F9A570003C36AE /* frameinitialisers_code.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9982602E12F9A540003C36AE /* frameinitialisers_code.txt */; };
 		9982603312F9A570003C36AE /* centrealignimage_code.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9982603012F9A56A003C36AE /* centrealignimage_code.txt */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		994E4D7012F9BE9A006F6A05 /* SNNamedLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNNamedLink.h; sourceTree = "<group>"; };
+		994E4D7112F9BE9A006F6A05 /* SNNamedLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNNamedLink.m; sourceTree = "<group>"; };
 		99825FDF12F9969D003C36AE /* SNSnippetArchiving.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SNSnippetArchiving.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99825FE212F9969D003C36AE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		99825FE512F9969D003C36AE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -142,6 +146,8 @@
 				9982602512F99896003C36AE /* SNSnippetReader.m */,
 				9982601112F996D1003C36AE /* SNSnippet.h */,
 				9982601212F996D1003C36AE /* SNSnippet.m */,
+				994E4D7012F9BE9A006F6A05 /* SNNamedLink.h */,
+				994E4D7112F9BE9A006F6A05 /* SNNamedLink.m */,
 				9982602A12F99A97003C36AE /* NSXMLElement+SNExtensions.h */,
 				9982602B12F99A97003C36AE /* NSXMLElement+SNExtensions.m */,
 				99825FE912F9969D003C36AE /* Supporting Files */,
@@ -197,6 +203,7 @@
 				9982602612F99896003C36AE /* SNSnippetReader.h in Headers */,
 				9982602912F998D1003C36AE /* SNSnippetArchiving.h in Headers */,
 				9982602C12F99A98003C36AE /* NSXMLElement+SNExtensions.h in Headers */,
+				994E4D7212F9BE9A006F6A05 /* SNNamedLink.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +324,7 @@
 				9982601D12F99757003C36AE /* SNSnippetWriter.m in Sources */,
 				9982602712F99896003C36AE /* SNSnippetReader.m in Sources */,
 				9982602D12F99A98003C36AE /* NSXMLElement+SNExtensions.m in Sources */,
+				994E4D7312F9BE9A006F6A05 /* SNNamedLink.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

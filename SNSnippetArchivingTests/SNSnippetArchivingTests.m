@@ -69,8 +69,30 @@
 	[self _performTestForKey:@"code" expectedValues:array];
 }
 
+- (void)testSnippetLicences {
+	SNNamedLink *mitLicence = [[SNNamedLink alloc] initWithName:@"MIT" andURL:[NSURL URLWithString:@"http://www.opensource.org/licenses/mit-license.php"]];
+	SNNamedLink *otherLicence = [[SNNamedLink alloc] initWithName:@"Other" andURL:nil];
+	[self _performTestForKey:@"licence" expectedValues:[NSArray arrayWithObjects:mitLicence, mitLicence, otherLicence, otherLicence, nil]];
+}
 
+- (void)testSnippetLinks {
+	//NSMutableArray *values = [NSMutableArray array];
+	//[values addObject:[NSDictionary dictionaryWithObject:[NSURL URLWithString:@"http://example.com/snippets.php"] forKey:@"source"]];
+	//[values addObject:[NSDictionary dictionaryWithObjectsAndKeys:[NSURL URLWithString:@"http://someblog.com/cool-code.html"], @"source", [NSURL URLWithString:@"http://, nil
+	//[self _performTestForKey:@"licence" expectedValues:[NSArray arrayWithObjects:@"MIT", @"MIT", @"Other", @"Other", nil]];
+}
 
+- (void)testSnippetAuthors {
+	//[self _performTestForKey:@"licence" expectedValues:[NSArray arrayWithObjects:@"MIT", @"MIT", @"Other", @"Other", nil]];
+}
+
+- (void)testSnippetTags {
+	//[self _performTestForKey:@"licence" expectedValues:[NSArray arrayWithObjects:@"MIT", @"MIT", @"Other", @"Other", nil]];
+}
+
+- (void)testSnippetHighlights {
+	//[self _performTestForKey:@"licence" expectedValues:[NSArray arrayWithObjects:@"MIT", @"MIT", @"Other", @"Other", nil]];
+}
 
 
 
