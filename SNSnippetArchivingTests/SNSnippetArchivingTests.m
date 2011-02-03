@@ -76,22 +76,26 @@
 }
 
 - (void)testSnippetLinks {
-	//NSMutableArray *values = [NSMutableArray array];
-	//[values addObject:[NSDictionary dictionaryWithObject:[NSURL URLWithString:@"http://example.com/snippets.php"] forKey:@"source"]];
-	//[values addObject:[NSDictionary dictionaryWithObjectsAndKeys:[NSURL URLWithString:@"http://someblog.com/cool-code.html"], @"source", [NSURL URLWithString:@"http://, nil
-	//[self _performTestForKey:@"licence" expectedValues:[NSArray arrayWithObjects:@"MIT", @"MIT", @"Other", @"Other", nil]];
+	SNNamedLink *link11 = [[[SNNamedLink alloc] initWithName:@"source" andURL:[NSURL URLWithString:@"http://someblog.com/cool-code.html"]] autorelease];
+	SNNamedLink *link12 = [[[SNNamedLink alloc] initWithName:@"example" andURL:[NSURL URLWithString:@"http://someblog.com/cool-example.html"]] autorelease];
+	SNNamedLink *link21 = [[[SNNamedLink alloc] initWithName:@"source" andURL:[NSURL URLWithString:@"http://example.com/snippets.php"]] autorelease];
+
+	[self _performTestForKey:@"links" expectedValues:[NSArray arrayWithObjects:[NSArray arrayWithObjects:link11, link12, nil], [NSArray arrayWithObject:link21], nil]];
 }
 
 - (void)testSnippetAuthors {
-	//[self _performTestForKey:@"licence" expectedValues:[NSArray arrayWithObjects:@"MIT", @"MIT", @"Other", @"Other", nil]];
+	[self _performTestForKey:@"authorName" expectedValues:[NSArray arrayWithObjects:@"Coda", @"Xcode", @"John Doe", @"Jane Doe", nil]];
+	[self _performTestForKey:@"authorEmail" expectedValues:[NSArray arrayWithObjects:@"john@johndoe.com", @"jane@janedoe.com", nil]];
+	[self _performTestForKey:@"authorURL" expectedValues:[NSArray arrayWithObjects:[NSURL URLWithString:@"http://www.johndoe.com/"], [NSURL URLWithString:@"http://www.janedoe.com/"], nil]];
 }
 
 - (void)testSnippetTags {
-	//[self _performTestForKey:@"licence" expectedValues:[NSArray arrayWithObjects:@"MIT", @"MIT", @"Other", @"Other", nil]];
+	[self _performTestForKey:@"tags" expectedValues:[NSArray arrayWithObjects:[NSArray arrayWithObject:@"Tag #1"], [NSArray arrayWithObjects:@"Doxygen", @"Comment", nil], nil]];
 }
 
 - (void)testSnippetHighlights {
-	//[self _performTestForKey:@"licence" expectedValues:[NSArray arrayWithObjects:@"MIT", @"MIT", @"Other", @"Other", nil]];
+	[self _performTestForKey:@"highlightKey" expectedValues:[NSArray arrayWithObjects:@"objc", @"c", @"html", @"unknown", nil]];
+	[self _performTestForKey:@"highlightName" expectedValues:[NSArray arrayWithObjects:@"Objective-C", @"C", @"HTML", @"Obj-PHP", nil]];
 }
 
 

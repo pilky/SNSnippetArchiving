@@ -12,5 +12,6 @@
 @interface NSXMLElement (SNExtensions)
 
 - (NSXMLElement *)sn_elementForName:(NSString *)aName;
+- (NSXMLNode *)sn_nodeForXPath:(NSString *)xpath error:(NSError **)error;
 
 @end

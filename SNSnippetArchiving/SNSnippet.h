@@ -13,6 +13,8 @@
 @private
     NSString *name;
 	NSString *snippetDescription;
+	NSString *highlightKey;
+	NSString *highlightName;
 	NSDictionary *links;
 	NSString *authorName;
 	NSString *authorEmail;
@@ -24,6 +26,8 @@
 
 @property (copy) NSString *name;
 @property (copy) NSString *snippetDescription;
+@property (copy) NSString *highlightKey;
+@property (copy) NSString *highlightName;
 @property (copy) NSDictionary *links;
 @property (copy) NSString *authorName;
 @property (copy) NSString *authorEmail;

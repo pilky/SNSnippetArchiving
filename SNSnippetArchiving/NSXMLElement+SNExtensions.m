@@ -19,4 +19,12 @@
 	return nil;
 }
 
+- (NSXMLNode *)sn_nodeForXPath:(NSString *)xpath error:(NSError **)error {
+	NSArray *nodes = [self nodesForXPath:xpath error:&*error];
+	if ([nodes count]) {
+		return [nodes objectAtIndex:0];
+	}
+	return nil;
+}
+
 @end
