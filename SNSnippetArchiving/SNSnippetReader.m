@@ -18,9 +18,8 @@
 + (NSArray *)snippetsFromFileAtURL:(NSURL *)aURL error:(NSError **)aError {
 	NSXMLDocument *doc = [[NSXMLDocument alloc] initWithContentsOfURL:aURL options:0 error:&*aError];
 	if (doc) {
-		[self snippetsFromXMLDocument:doc error:&*aError];
+		return [self snippetsFromXMLDocument:doc error:&*aError];
 	}
-	
 	return nil;
 }
 

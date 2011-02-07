@@ -14,6 +14,11 @@
 
 @synthesize name, snippetDescription, links, authorName, authorEmail, authorURL, licence, tags, code, highlightKey, highlightName;
 
++ (NSString *)normaliseLanguageWithName:(NSString *)aName {
+	return aName;
+}
+
+
 - (id)initWithXML:(NSXMLElement *)aXMLElement {
 	if ((self = [super init])) {
 		name = [[[aXMLElement sn_elementForName:@"name"] stringValue] copy];

@@ -24,6 +24,8 @@
 	NSString *code;
 }
 
++ (NSString *)normaliseLanguageWithName:(NSString *)aName;
+
 @property (copy) NSString *name;
 @property (copy) NSString *snippetDescription;
 @property (copy) NSString *highlightKey;
