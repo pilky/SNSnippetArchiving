@@ -61,7 +61,6 @@
 
 - (void)testSnippetCode {
 	NSMutableArray *array = [NSMutableArray array];
-	NSLog(@"testSnippetCode");
 	[array addObject:[NSString stringWithContentsOfFile:[[NSBundle bundleWithIdentifier:@"com.mcubedsw.SNSnippetArchivingTests"] pathForResource:@"frameinitialisers_code" ofType:@"txt"] encoding:NSUTF8StringEncoding error:nil]];
 	[array addObject:[NSString stringWithContentsOfFile:[[NSBundle bundleWithIdentifier:@"com.mcubedsw.SNSnippetArchivingTests"] pathForResource:@"centrealignimage_code" ofType:@"txt"] encoding:NSUTF8StringEncoding error:nil]];
 	[array addObject:[NSString stringWithContentsOfFile:[[NSBundle bundleWithIdentifier:@"com.mcubedsw.SNSnippetArchivingTests"] pathForResource:@"categorydoxygencomment_code" ofType:@"txt"] encoding:NSUTF8StringEncoding error:nil]];

@@ -11,6 +11,13 @@
 
 @implementation NSXMLElement (SNExtensions)
 
++ (NSXMLElement *)sn_elementWithName:(NSString *)aName cdataContent:(NSString *)aCDATA {
+	NSXMLNode *cdataNode = [[[NSXMLNode alloc] initWithKind:NSXMLTextKind options:NSXMLNodeIsCDATA] autorelease];
+	[cdataNode setStringValue:aCDATA];
+	
+	return [NSXMLNode elementWithName:aName children:[NSArray arrayWithObject:cdataNode] attributes:nil];
+}
+
 - (NSXMLElement *)sn_elementForName:(NSString *)aName {
 	NSArray *elements = [self elementsForName:aName];
 	if ([elements count]) {

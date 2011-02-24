@@ -31,9 +31,12 @@
 		9982603812F9A605003C36AE /* categorydoxygencomment_code.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9982603412F9A591003C36AE /* categorydoxygencomment_code.txt */; };
 		9982603912F9A605003C36AE /* testsnippet_code.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9982603612F9A5D4003C36AE /* testsnippet_code.txt */; };
 		9982603B12F9A97C003C36AE /* LICENCE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9982603A12F9A97C003C36AE /* LICENCE.txt */; };
-		99DDF2E313005CBF00BB7B52 /* SNLanguageParsingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99DDF2E213005CBF00BB7B52 /* SNLanguageParsingTests.m */; };
-		99DDF2E513005DC100BB7B52 /* SNConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 99DDF2E413005DC100BB7B52 /* SNConstants.h */; };
+		99A23AD313018425006647F4 /* SNLanguageNormaliser.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A23AD0130180EC006647F4 /* SNLanguageNormaliser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99A23AD613018454006647F4 /* SNLanguageNormaliserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A23AD513018454006647F4 /* SNLanguageNormaliserTests.m */; };
+		99A23AD7130193FF006647F4 /* SNLanguageNormaliser.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A23AD1130180EC006647F4 /* SNLanguageNormaliser.m */; };
+		99DDF2E513005DC100BB7B52 /* SNConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 99DDF2E413005DC100BB7B52 /* SNConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		99DDF2E713005DDF00BB7B52 /* SNConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 99DDF2E613005DDF00BB7B52 /* SNConstants.m */; };
+		99FDB9E313154C68001B8E43 /* SNSnippetWritingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FDB9E213154C68001B8E43 /* SNSnippetWritingTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,10 +81,14 @@
 		9982603412F9A591003C36AE /* categorydoxygencomment_code.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = categorydoxygencomment_code.txt; sourceTree = "<group>"; };
 		9982603612F9A5D4003C36AE /* testsnippet_code.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testsnippet_code.txt; sourceTree = "<group>"; };
 		9982603A12F9A97C003C36AE /* LICENCE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE.txt; sourceTree = "<group>"; };
-		99DDF2E113005CBF00BB7B52 /* SNLanguageParsingTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNLanguageParsingTests.h; sourceTree = "<group>"; };
-		99DDF2E213005CBF00BB7B52 /* SNLanguageParsingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNLanguageParsingTests.m; sourceTree = "<group>"; };
+		99A23AD0130180EC006647F4 /* SNLanguageNormaliser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNLanguageNormaliser.h; sourceTree = "<group>"; };
+		99A23AD1130180EC006647F4 /* SNLanguageNormaliser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNLanguageNormaliser.m; sourceTree = "<group>"; };
+		99A23AD413018454006647F4 /* SNLanguageNormaliserTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNLanguageNormaliserTests.h; sourceTree = "<group>"; };
+		99A23AD513018454006647F4 /* SNLanguageNormaliserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNLanguageNormaliserTests.m; sourceTree = "<group>"; };
 		99DDF2E413005DC100BB7B52 /* SNConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNConstants.h; sourceTree = "<group>"; };
 		99DDF2E613005DDF00BB7B52 /* SNConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNConstants.m; sourceTree = "<group>"; };
+		99FDB9E113154C68001B8E43 /* SNSnippetWritingTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNSnippetWritingTests.h; sourceTree = "<group>"; };
+		99FDB9E213154C68001B8E43 /* SNSnippetWritingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSnippetWritingTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +164,8 @@
 				9982601212F996D1003C36AE /* SNSnippet.m */,
 				994E4D7012F9BE9A006F6A05 /* SNNamedLink.h */,
 				994E4D7112F9BE9A006F6A05 /* SNNamedLink.m */,
+				99A23AD0130180EC006647F4 /* SNLanguageNormaliser.h */,
+				99A23AD1130180EC006647F4 /* SNLanguageNormaliser.m */,
 				9982602A12F99A97003C36AE /* NSXMLElement+SNExtensions.h */,
 				9982602B12F99A97003C36AE /* NSXMLElement+SNExtensions.m */,
 				99825FE912F9969D003C36AE /* Supporting Files */,
@@ -180,8 +189,10 @@
 			children = (
 				9982600012F9969D003C36AE /* SNSnippetArchivingTests.h */,
 				9982600212F9969D003C36AE /* SNSnippetArchivingTests.m */,
-				99DDF2E113005CBF00BB7B52 /* SNLanguageParsingTests.h */,
-				99DDF2E213005CBF00BB7B52 /* SNLanguageParsingTests.m */,
+				99FDB9E113154C68001B8E43 /* SNSnippetWritingTests.h */,
+				99FDB9E213154C68001B8E43 /* SNSnippetWritingTests.m */,
+				99A23AD413018454006647F4 /* SNLanguageNormaliserTests.h */,
+				99A23AD513018454006647F4 /* SNLanguageNormaliserTests.m */,
 				99825FFA12F9969D003C36AE /* Supporting Files */,
 			);
 			path = SNSnippetArchivingTests;
@@ -216,6 +227,7 @@
 				9982602C12F99A98003C36AE /* NSXMLElement+SNExtensions.h in Headers */,
 				994E4D7212F9BE9A006F6A05 /* SNNamedLink.h in Headers */,
 				99DDF2E513005DC100BB7B52 /* SNConstants.h in Headers */,
+				99A23AD313018425006647F4 /* SNLanguageNormaliser.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +350,7 @@
 				9982602D12F99A98003C36AE /* NSXMLElement+SNExtensions.m in Sources */,
 				994E4D7312F9BE9A006F6A05 /* SNNamedLink.m in Sources */,
 				99DDF2E713005DDF00BB7B52 /* SNConstants.m in Sources */,
+				99A23AD7130193FF006647F4 /* SNLanguageNormaliser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,7 +359,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9982600312F9969D003C36AE /* SNSnippetArchivingTests.m in Sources */,
-				99DDF2E313005CBF00BB7B52 /* SNLanguageParsingTests.m in Sources */,
+				99A23AD613018454006647F4 /* SNLanguageNormaliserTests.m in Sources */,
+				99FDB9E313154C68001B8E43 /* SNSnippetWritingTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +418,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "@rpath";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				SDKROOT = macosx;
 			};
@@ -443,7 +458,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SNSnippetArchiving/SNSnippetArchiving-Prefix.pch";
 				INFOPLIST_FILE = "SNSnippetArchiving/SNSnippetArchiving-Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				INSTALL_PATH = "@rpath";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -457,6 +472,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SNSnippetArchivingTests/SNSnippetArchivingTests-Prefix.pch";
 				INFOPLIST_FILE = "SNSnippetArchivingTests/SNSnippetArchivingTests-Info.plist";
@@ -478,6 +494,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SNSnippetArchivingTests/SNSnippetArchivingTests-Prefix.pch";
 				INFOPLIST_FILE = "SNSnippetArchivingTests/SNSnippetArchivingTests-Info.plist";

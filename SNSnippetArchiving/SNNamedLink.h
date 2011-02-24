@@ -15,6 +15,7 @@
 	NSURL *url;
 }
 
++ (SNNamedLink *)namedLinkWithName:(NSString *)aName andURL:(NSURL *)aURL;
 - (id)initWithName:(NSString *)aName andURL:(NSURL *)aURL;
 @property (copy) NSString *name;
 @property (retain) NSURL *url;

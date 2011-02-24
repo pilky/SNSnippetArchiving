@@ -14,11 +14,6 @@
 
 @synthesize name, snippetDescription, links, authorName, authorEmail, authorURL, licence, tags, code, highlightKey, highlightName;
 
-+ (NSString *)normaliseLanguageWithName:(NSString *)aName {
-	return aName;
-}
-
-
 - (id)initWithXML:(NSXMLElement *)aXMLElement {
 	if ((self = [super init])) {
 		name = [[[aXMLElement sn_elementForName:@"name"] stringValue] copy];
@@ -83,7 +78,66 @@
 
 
 - (NSXMLElement *)xmlRepresentation {
-	return nil;
+	NSXMLElement *snippetElement = [NSXMLNode elementWithName:@"snippet"];
+	
+	if ([self name]) {
+		[snippetElement addChild:[NSXMLElement sn_elementWithName:@"name" cdataContent:[self name]]];
+	}
+	
+	if ([self snippetDescription]) {
+		[snippetElement addChild:[NSXMLElement sn_elementWithName:@"description" cdataContent:[self snippetDescription]]];
+	}
+	
+	if ([self code]) {
+		[snippetElement addChild:[NSXMLElement sn_elementWithName:@"code" cdataContent:[self code]]];
+	}
+	
+	if ([self licence]) {
+		NSXMLElement *licenceElement = [NSXMLNode elementWithName:@"license" stringValue:[[self licence] name]];
+		if ([[self licence] url]) {
+			[licenceElement addAttribute:[NSXMLNode attributeWithName:@"link" stringValue:[[[self licence] url] absoluteString]]];
+		}
+		[snippetElement addChild:licenceElement];
+	}
+	
+	if ([[self tags] count]) {
+		NSXMLElement *tagsElement = [NSXMLNode elementWithName:@"tags"];
+		for (NSString *tag in [self tags]) {
+			[tagsElement addChild:[NSXMLElement sn_elementWithName:@"tag" cdataContent:tag]];
+		}
+		[snippetElement addChild:tagsElement];
+	}
+	
+	if ([self authorURL] || [self authorName] || [self authorEmail]) {
+		NSXMLElement *authorElement = [NSXMLNode elementWithName:@"author"];
+		if ([self authorName]) {
+			[authorElement addChild:[NSXMLElement sn_elementWithName:@"name" cdataContent:[self authorName]]];
+		}
+		
+		if ([self authorEmail]) {
+			[authorElement addChild:[NSXMLElement elementWithName:@"email" stringValue:[self authorEmail]]];
+		}
+		
+		if ([self authorURL]) {
+			[authorElement addChild:[NSXMLElement elementWithName:@"link" stringValue:[[self authorURL] absoluteString]]];
+		}
+		
+		[snippetElement addChild:authorElement];
+	}
+	
+	if ([[self links] count]) {
+		NSXMLElement *linksElement = [NSXMLNode elementWithName:@"links"];
+		for (SNNamedLink *link in [self links]) {
+			NSXMLElement *linkElement = [NSXMLNode elementWithName:@"link"];
+			[linkElement addChild:[NSXMLElement sn_elementWithName:@"name" cdataContent:[link name]]];
+			[linkElement addChild:[NSXMLNode elementWithName:@"url" stringValue:[[link url] absoluteString]]];
+			[linksElement addChild:linkElement];
+		}
+		[snippetElement addChild:linksElement];
+	}
+	
+	
+	return snippetElement;
 }
 
 

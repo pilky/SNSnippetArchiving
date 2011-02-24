@@ -13,6 +13,10 @@
 
 @synthesize name, url;
 
++ (SNNamedLink *)namedLinkWithName:(NSString *)aName andURL:(NSURL *)aURL {
+	return [[[self alloc] initWithName:aName andURL:aURL] autorelease];
+}
+
 - (id)initWithName:(NSString *)aName andURL:(NSURL *)aURL {
     if ((self = [super init])) {
         name = [aName copy];
