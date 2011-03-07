@@ -42,3 +42,5 @@ extern NSString *SNVisualBasicLanguage;
 extern NSString *SNXMLLanguage;
 
 extern NSString *SNUnknownLanguage;
+
+extern NSString *SNErrorDomain;

@@ -26,6 +26,7 @@
 		if (authorLink) {
 			authorURL = [[NSURL URLWithString:authorLink] retain];
 		}
+		[authorLink release];
 		
 		NSXMLElement *licenceElement = [aXMLElement sn_elementForName:@"license"];
 		NSURL *licenceURL = nil;
@@ -90,6 +91,20 @@
 	
 	if ([self code]) {
 		[snippetElement addChild:[NSXMLElement sn_elementWithName:@"code" cdataContent:[self code]]];
+	}
+	
+	if ([[self highlightKey] length] || [[self highlightName] length]) {
+		NSXMLElement *highlightElement = [NSXMLNode elementWithName:@"highlight"];
+		if ([[self highlightKey] length]) {
+			[highlightElement addAttribute:[NSXMLNode attributeWithName:@"key" stringValue:[self highlightKey]]];
+		}
+		if ([[self highlightName] length]) {
+			NSXMLNode *textNode = [[NSXMLNode alloc] initWithKind:NSXMLTextKind options:NSXMLNodeIsCDATA];
+			[textNode setStringValue:[self highlightName]];
+			[highlightElement addChild:textNode];
+			[textNode release];
+		}
+		[snippetElement addChild:highlightElement];
 	}
 	
 	if ([self licence]) {

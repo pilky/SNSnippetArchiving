@@ -74,7 +74,7 @@ static NSMutableDictionary *languageMap;
 }
 
 + (NSString *)_cleanUpName:(NSString *)aName {
-	NSMutableString *nameToClean = [[aName lowercaseString] mutableCopy];
+	NSMutableString *nameToClean = [[[aName lowercaseString] mutableCopy] autorelease];
 	[nameToClean replaceOccurrencesOfString:@"-" withString:@"" options:0 range:NSMakeRange(0, [nameToClean length])];
 	[nameToClean replaceOccurrencesOfString:@" " withString:@"" options:0 range:NSMakeRange(0, [nameToClean length])];
 	return [[nameToClean copy] autorelease];

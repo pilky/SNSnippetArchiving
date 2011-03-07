@@ -116,6 +116,11 @@
 	[self _performSingleSnippetTestWithAttributes:attributes expectedSnippetString:@"<links><link><name><![CDATA[Source]]></name><url>http://example.com/somecode.html</url></link><link><name><![CDATA[Example]]></name><url>http://mysite.com/test.php</url></link></links>"];
 }
 
+- (void)testSnippetHighlightXML {
+	NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:@"html", @"highlightKey", @"HTML", @"highlightName", nil];
+	[self _performSingleSnippetTestWithAttributes:attributes expectedSnippetString:@"<highlight key=\"html\"><![CDATA[HTML]]></highlight>"];
+}
+
 - (void)_performSingleSnippetTestWithAttributes:(NSDictionary *)aAttributes expectedSnippetString:(NSString *)aSnippetString {
 	SNSnippet *snippet = [[SNSnippet alloc] init];
 	for (NSString *key in aAttributes) {

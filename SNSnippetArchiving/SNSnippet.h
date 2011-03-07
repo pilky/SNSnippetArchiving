@@ -15,7 +15,7 @@
 	NSString *snippetDescription;
 	NSString *highlightKey;
 	NSString *highlightName;
-	NSDictionary *links;
+	NSArray *links;
 	NSString *authorName;
 	NSString *authorEmail;
 	NSURL *authorURL;
@@ -28,7 +28,7 @@
 @property (copy) NSString *snippetDescription;
 @property (copy) NSString *highlightKey;
 @property (copy) NSString *highlightName;
-@property (copy) NSDictionary *links;
+@property (copy) NSArray *links;
 @property (copy) NSString *authorName;
 @property (copy) NSString *authorEmail;
 @property (retain) NSURL *authorURL;

@@ -42,3 +42,5 @@ NSString *SNVisualBasicLanguage = @"visualbasic";
 NSString *SNXMLLanguage = @"xml";
 
 NSString *SNUnknownLanguage = @"unknown";
+
+NSString *SNErrorDomain = @"com.mcubedsw.snippetarchivingerrors";
