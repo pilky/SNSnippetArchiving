@@ -24,7 +24,7 @@
 }
 
 + (NSArray *)snippetsFromFileAtURL:(NSURL *)aURL error:(NSError **)aError {
-	NSXMLDocument *doc = [[NSXMLDocument alloc] initWithContentsOfURL:aURL options:0 error:&*aError];
+	NSXMLDocument *doc = [[[NSXMLDocument alloc] initWithContentsOfURL:aURL options:0 error:&*aError] autorelease];
 	if (!doc)
 		return nil;
 	
@@ -53,7 +53,9 @@
 	NSArray *snippets = [NSArray arrayWithContentsOfURL:aURL];
 	if (![snippets count]) {
 		NSDictionary *userInfo = [NSDictionary dictionaryWithObject:@"Snippet file is empty" forKey:NSLocalizedDescriptionKey];
-		*aError = [NSError errorWithDomain:SNErrorDomain code:1 userInfo:userInfo];
+		if (aError != NULL) {
+			*aError = [NSError errorWithDomain:SNErrorDomain code:1 userInfo:userInfo];
+		}
 		return nil;
 	}
 	
@@ -72,6 +74,7 @@
 		[snippet setTags:[[snippetDict objectForKey:@"tags"] componentsSeparatedByString:@","]];
 		
 		[returnSnippets addObject:snippet];
+		[snippet release];
 	}
 	return [[returnSnippets copy] autorelease];
 }
